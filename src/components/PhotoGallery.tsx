@@ -7,13 +7,14 @@ interface PhotoGalleryProps {
 
 // Placeholder photos - user should replace these with real couple photos
 const photos = [
-  { id: 1, emoji: "🥰", caption: "Our first date" },
-  { id: 2, emoji: "💕", caption: "That special trip" },
-  { id: 3, emoji: "🌅", caption: "Sunset together" },
-  { id: 4, emoji: "🎉", caption: "Celebrating us" },
-  { id: 5, emoji: "🤗", caption: "Cozy moments" },
-  { id: 6, emoji: "💖", caption: "Forever & always" },
+  { id: 1, src: "/photos/first-date.jpeg", caption: "First pandal hoping" },
+  { id: 2, src: "/photos/trip.jpeg", caption: "Most beautiful 15mins walk" },
+  { id: 3, src: "/photos/sunset.jpeg", caption: "Mocha roll" },
+  { id: 4, src: "/photos/celebrations.jpeg", caption: "Celebrating us" },
+  { id: 5, src: "/photos/cozy.jpeg", caption: "Fav picture" },
+  { id: 6, src: "/photos/forever.jpeg", caption: "Our first picture together" },
 ];
+
 
 const PhotoGallery = ({ open, onClose }: PhotoGalleryProps) => {
   return (
@@ -30,26 +31,26 @@ const PhotoGallery = ({ open, onClose }: PhotoGalleryProps) => {
             Every photo tells our story 💕
           </p>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-            {photos.map((photo) => (
-              <div
-                key={photo.id}
-                className="aspect-square rounded-2xl bg-secondary border-2 border-border flex flex-col items-center justify-center gap-2 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-pointer group"
-              >
-                <span className="text-5xl group-hover:scale-110 transition-transform duration-300">
-                  {photo.emoji}
-                </span>
-                <p className="text-xs font-body text-muted-foreground font-medium">
-                  {photo.caption}
-                </p>
-                <p className="text-[10px] font-body text-muted-foreground/50 italic">
-                  Replace with your photo!
-                </p>
-              </div>
-            ))}
-          </div>
-          <p className="text-center text-sm font-body text-muted-foreground mt-4 italic">
-            💡 Tip: Replace the placeholders with your real photos in the code!
-          </p>
+  {photos.map((photo) => (
+    <div
+      key={photo.id}
+      className=" relative aspect-square rounded-2xl bg-secondary border-2 border-border overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-300 cursor-pointer group"
+    >
+      <img
+        src={photo.src}
+        alt={photo.caption}
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+      />
+
+      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+        <p className="text-xs font-body text-white p-2">
+          {photo.caption}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
       </DialogContent>
     </Dialog>

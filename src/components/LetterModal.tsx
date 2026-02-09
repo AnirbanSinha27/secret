@@ -18,10 +18,10 @@ const LetterModal = ({ open, onClose }: LetterModalProps) => {
         <div className="p-4 space-y-4">
           <div className="bg-valentine-blush/50 rounded-2xl p-6 border border-primary/10 shadow-inner">
             <div className="font-body text-foreground leading-relaxed space-y-4 text-base">
-              <p className="font-display text-2xl text-primary">My Dearest Love,</p>
+              <p className="font-display text-2xl text-primary">Meri pyaari biwi,</p>
               
               <p>
-                From the very first moment I met you, I knew there was something extraordinary about you. Your smile lights up my entire world, and your laugh is my favorite melody. 🎵
+                From the very first moment I started talking to you online, I knew there was something extraordinary about you. Your smile lights up my entire world, and your laugh is my favorite melody. 🎵
               </p>
               
               <p>
@@ -37,7 +37,7 @@ const LetterModal = ({ open, onClose }: LetterModalProps) => {
               </p>
               
               <p className="font-display text-xl text-primary">
-                Forever & Always Yours 💝
+                Aapka patidev 💝
               </p>
             </div>
           </div>

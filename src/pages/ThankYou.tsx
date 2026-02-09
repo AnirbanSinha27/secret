@@ -19,12 +19,12 @@ const ThankYou = () => {
       <FloatingHearts />
       <HeartCursorTrail />
       <Confetti active={showConfetti} />
-      <MusicPlayer src="https://www.bensound.com/bensound-music/bensound-love.mp3" />
+      <MusicPlayer src="/music/paglu.mp3" />
 
       <div className="animate-page-enter z-10 flex flex-col items-center gap-6 max-w-lg text-center">
         {/* Cute GIF */}
         <img
-          src="https://media.tenor.com/OXLA_wvMfJQAAAAC/milk-and-mocha.gif"
+          src="https://imgs.search.brave.com/EQh4DpxOXNe8sYLYqauF9xTlkYeTH1z5bVRdD6ixAs0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9naWZk/Yi5jb20vaW1hZ2Vz/L2hpZ2gvbWlsay1h/bmQtbW9jaGEtbGVh/bmluZy1jbnBmN2ti/NHd6NnZlNm90Lmdp/Zg.gif"
           alt="Milk and Mocha celebrating"
           className="w-60 h-60 object-cover rounded-3xl shadow-lg border-4 border-valentine-rose/30"
         />
@@ -35,7 +35,7 @@ const ThankYou = () => {
             Thank You!
           </h1>
           <h2 className="text-3xl md:text-4xl font-display text-valentine-rose">
-            Happy Valentine's Day Baby! 💝
+            Happy Valentine's Day Jaana! 💝
           </h2>
         </div>
 
@@ -44,7 +44,7 @@ const ThankYou = () => {
         </p>
 
         <img
-          src="https://media.tenor.com/lckBfJFPBCEAAAAC/happy-cute.gif"
+          src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjJkN3pnZmx2OXlmN3B3ODM0OGVuZWI1YW16dXVhYnhlbW5ucjVxZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/y93x7gLXTO5dnSWCEI/giphy.gif"
           alt="Cute happy celebration"
           className="w-36 h-36 object-cover rounded-2xl shadow-md"
         />

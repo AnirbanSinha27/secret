@@ -13,24 +13,21 @@ const Gifts = () => {
   const giftCards = [
     {
       id: 1,
-      title: "Love Quiz 💕",
-      description: "How well do you know us? Take this cute quiz!",
+      title: "Gift 1 💕",
       icon: Heart,
       gradient: "from-valentine-pink to-valentine-rose",
       emoji: "🧠",
     },
     {
       id: 2,
-      title: "Love Letter 💌",
-      description: "A special letter written just for you...",
+      title: "Gift 2 💌",
       icon: PenLine,
       gradient: "from-valentine-rose to-valentine-lavender",
       emoji: "💌",
     },
     {
       id: 3,
-      title: "Our Memories 📸",
-      description: "Our beautiful moments together!",
+      title: "Gift 3 📸",
       icon: Camera,
       gradient: "from-valentine-lavender to-valentine-pink",
       emoji: "📸",
@@ -41,7 +38,7 @@ const Gifts = () => {
     <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background px-4 py-12">
       <FloatingHearts />
       <HeartCursorTrail />
-      <MusicPlayer src="https://www.bensound.com/bensound-music/bensound-love.mp3" />
+      <MusicPlayer src="https://s3.ustatik.com/audio.com.audio/transcoding/31/74/1840875122147431-1840875122223882-1840875125298316.mp3?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=W7IA3NSYSOQIKLY9DEVC%2F20260209%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260209T171000Z&X-Amz-SignedHeaders=host&X-Amz-Expires=518400&X-Amz-Signature=e31f0d1ac4095f565e5c0fce827bbabc1d0d3d69c4b529104b5ccf7db48f7549" />
 
       <div className="animate-page-enter z-10 flex flex-col items-center gap-8 max-w-4xl w-full text-center">
         <div className="space-y-3">
@@ -67,7 +64,6 @@ const Gifts = () => {
                   <gift.icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-2xl font-display text-foreground">{gift.title}</h3>
-                <p className="text-sm font-body text-muted-foreground">{gift.description}</p>
                 <span className="mt-2 px-6 py-2 rounded-full bg-primary text-primary-foreground font-body font-semibold text-sm group-hover:scale-105 transition-transform">
                   Open Gift 🎀
                 </span>

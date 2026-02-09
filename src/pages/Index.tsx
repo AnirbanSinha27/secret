@@ -17,13 +17,13 @@ const Index = () => {
     <div className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background px-4">
       <FloatingHearts />
       <HeartCursorTrail />
-      <MusicPlayer src="https://www.bensound.com/bensound-music/bensound-love.mp3" />
+      <MusicPlayer src="https://s3.ustatik.com/audio.com.audio/transcoding/38/33/1845363466313338-1845363466419209-1845363468943138.mp3?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=W7IA3NSYSOQIKLY9DEVC%2F20260209%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20260209T165352Z&X-Amz-SignedHeaders=host&X-Amz-Expires=518400&X-Amz-Signature=856d0e5c92f6d80a207bede581f77507232c86b92c0d46270db2403f82beb8d6" />
 
       <div className="animate-page-enter z-10 flex flex-col items-center gap-6 max-w-lg text-center">
         {/* Cute GIF */}
         <div className="relative">
           <img
-            src="https://media.tenor.com/hIkMm_9EWTQAAAAC/milk-and-mocha.gif"
+            src="https://imgs.search.brave.com/K8JEMvFLOMTE4J8PIb9FNSXbtTyPff3oEoGAIexcqoc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/WDFYbGNKaEpQWlVB/QUFBTS9sb3ZlLmdp/Zg.gif"
             alt="Milk and Mocha bears hugging"
             className="w-56 h-56 object-cover rounded-3xl shadow-lg border-4 border-valentine-rose/30"
           />
@@ -33,7 +33,7 @@ const Index = () => {
 
         {/* Title */}
         <h1 className="text-5xl md:text-7xl font-display text-primary leading-tight">
-          Will You Be My Valentine?
+          Will You Be My Valentine Anannya?
         </h1>
 
         {/* Description */}
@@ -42,8 +42,10 @@ const Index = () => {
         </p>
 
         {/* Cute cat GIF */}
+
+        
         <img
-          src="https://media.tenor.com/WkGOBu6MacYAAAAC/love-cat.gif"
+          src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2xpNWVjaG9pcGQzbzYyMGw4Z2Q3a3F0NG1yeWxxbzlveTR3Z3o0cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MNoPXfXzOBrD8alZ9H/giphy.gif"
           alt="Cute cat with hearts"
           className="w-32 h-32 object-cover rounded-2xl shadow-md"
         />

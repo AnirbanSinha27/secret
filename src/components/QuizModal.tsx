@@ -8,18 +8,18 @@ interface QuizModalProps {
 
 const quizzes = [
   {
-    question: "What's the first thing I noticed about you? 💕",
-    options: ["Your smile", "Your eyes", "Your laugh", "Everything!"],
+    question: "Who is the absolute BOSS in this relationship? 💕",
+    options: ["Your Mom", "Obviously You", "Not me", "Shanti"],
+    correct: 1,
+  },
+  {
+    question: "Who fights a lot in this relationship? 🥰",
+    options: ["Anannya", "Trisha", "Shana", "No one!"],
     correct: 3,
   },
   {
-    question: "What's our favorite thing to do together? 🥰",
-    options: ["Watch movies", "Cook together", "Go on walks", "All of the above!"],
-    correct: 3,
-  },
-  {
-    question: "How much do I love you? 💝",
-    options: ["A lot", "To the moon and back", "More than pizza", "Infinity x infinity!"],
+    question: "Where do i plan to spend the rest of my life? 💝",
+    options: ["Kashmir", "Darjeeling", "Our room", "Your lap"],
     correct: 3,
   },
 ];
